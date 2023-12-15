@@ -1,0 +1,12 @@
+self.__RSC_CSS_MANIFEST={
+  "__entry_css_mods__": {
+    "/Users/nikalachashvili/Desktop/WebProjects/buycom/app/page": [
+      "/Users/nikalachashvili/Desktop/WebProjects/buycom/app/globals.css",
+      "/Users/nikalachashvili/Desktop/WebProjects/buycom/node_modules/react-toastify/dist/ReactToastify.css"
+    ]
+  },
+  "/Users/nikalachashvili/Desktop/WebProjects/buycom/app/layout.js": [
+    "/Users/nikalachashvili/Desktop/WebProjects/buycom/node_modules/react-toastify/dist/ReactToastify.css",
+    "/Users/nikalachashvili/Desktop/WebProjects/buycom/app/globals.css"
+  ]
+}
