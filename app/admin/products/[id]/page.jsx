@@ -1,19 +1,24 @@
-
-
 import React from "react";
 import axios from "axios";
-
 import UpdateProduct from "@/components/admin/UpdateProduct";
 
 const getProduct = async (id) => {
-  const { data } = await axios.get(`${process.env.API_URL}/api/products/${id}`);
-  return data;
+
+  try {
+    const { data } = await axios.get(
+      `${process.env.API_URL}/api/products/${id}`
+    );
+    return data.product;
+  } catch (error) {
+
+    return null;
+  }
 };
 
-const HomePage = async ({ params }) => {
+const UpProduct = async ({ params }) => {
   const data = await getProduct(params.id);
 
-  return <UpdateProduct data={data.product} />;
+  return <UpdateProduct data={data} />;
 };
 
-export default HomePage;
+export default UpProduct;

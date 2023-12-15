@@ -2,7 +2,7 @@
 
 import ProductContext from "@/context/ProductContext";
 import Image from "next/image";
-import React, { useContext, useState , useEffect} from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { toast } from "react-toastify";
 
 const UploadImages = ({ id }) => {

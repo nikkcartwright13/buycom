@@ -5,7 +5,7 @@ const nextConfig = {
   },
   env: {
     // API_URL: "http://localhost:3000",
-   API_URL: "https://buycom-fhzqm7lpd-nikkcartwrights-projects.vercel.app",
+    API_URL: "https://buycom-9few0i3kv-nikkcartwrights-projects",
     DB_LOCAL_URI: "mongodb://localhost:27017/buyitnow",
     // DB_URI:"mongodb+srv://nikkcartwrighttt:nikkcartwright@nikkcartwright.gdblwyh.mongodb.net/?retryWrites=true&w=majority",
     DB_URI: "mongodb+srv://nikkcartwrighttt:nikkcartwright@nikkcartwright.gdblwyh.mongodb.net/test?retryWrites=true&w=majority",

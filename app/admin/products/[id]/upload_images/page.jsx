@@ -3,10 +3,10 @@ import UploadImages from "@/components/admin/UploadImages";
 
 
 
-const HomePage = async ({ params }) => {
+const UpImage = async ({ params }) => {
  
 
   return <UploadImages id={params.id} />;
 };
 
-export default HomePage;
+export default UpImage;

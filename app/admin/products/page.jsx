@@ -1,25 +1,27 @@
 import React from "react";
 import axios from "axios";
 import Products from "@/components/admin/Products";
-import queryString from "query-string";
 
-const getProducts = async (searchParams) => {
-  const urlParams = {
-    page: searchParams.page,
-  };
 
-  const searchQuery = queryString.stringify(urlParams);
+const getProducts = async () => {
 
-  const { data } = await axios.get(
-    `${process.env.API_URL}/api/products/${searchQuery}`
-  );
-  return data;
+  try {
+    const { data } = await axios.get(
+      `${process.env.API_URL}/api/products`
+    );
+    return data;
+  } catch (error) {
+
+    return null;
+  }
+
+
 };
 
-const HomePage = async ({ searchParams }) => {
-  const data = await getProducts(searchParams);
+const Prd = async () => {
+  const data = await getProducts();
 
   return <Products data={data} />;
 };
 
-export default HomePage;
+export default Prd;
