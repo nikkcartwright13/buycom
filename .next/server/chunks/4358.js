@@ -201,8 +201,8 @@ const checkoutSession = async (req, res)=>{
         payment_method_types: [
             "card"
         ],
-        success_url: `${"http://localhost:3000"}/me/orders?order_success=true`,
-        cancel_url: `${"http://localhost:3000"}`,
+        success_url: `${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/me/orders?order_success=true`,
+        cancel_url: `${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}`,
         customer_email: req?.user?.email,
         client_reference_id: req?.user?._id,
         mode: "payment",

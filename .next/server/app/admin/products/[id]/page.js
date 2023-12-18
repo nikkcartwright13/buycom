@@ -538,7 +538,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const getProduct = async (id)=>{
     try {
-        const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3___default().get(`${"http://localhost:3000"}/api/products/${id}`);
+        const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3___default().get(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/products/${id}`);
         return data.product;
     } catch (error) {
         return null;
@@ -808,7 +808,7 @@ const UpdateProduct = ({ data  })=>{
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [3098,486,6032,3382,5110], () => (__webpack_exec__(5932)));
+var __webpack_exports__ = __webpack_require__.X(0, [3098,486,4687,3382,5110], () => (__webpack_exec__(5932)));
 module.exports = __webpack_exports__;
 
 })();

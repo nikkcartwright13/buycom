@@ -5,9 +5,10 @@ const nextConfig = {
   },
   env: {
     // API_URL: "http://localhost:3000",
-    API_URL: "https://buycom-9few0i3kv-nikkcartwrights-projects",
+    API_URL: "https://buycom-c8fjodpc4-nikkcartwrights-projects.vercel.app",
     DB_LOCAL_URI: "mongodb://localhost:27017/buyitnow",
-    // DB_URI:"mongodb+srv://nikkcartwrighttt:nikkcartwright@nikkcartwright.gdblwyh.mongodb.net/?retryWrites=true&w=majority",
+   
+    NEXTAUTH_URL:"https://buycom-c8fjodpc4-nikkcartwrights-projects.vercel.app",
     DB_URI: "mongodb+srv://nikkcartwrighttt:nikkcartwright@nikkcartwright.gdblwyh.mongodb.net/test?retryWrites=true&w=majority",
     NEXTAUTH_SECRET: "codingwithabbas",
     CLOUD_NAME: "dwj0vhfrl",

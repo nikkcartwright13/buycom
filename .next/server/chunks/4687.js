@@ -1,8 +1,8 @@
-exports.id = 6032;
-exports.ids = [6032];
+exports.id = 4687;
+exports.ids = [4687];
 exports.modules = {
 
-/***/ 76007:
+/***/ 81434:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 28399));
@@ -395,7 +395,7 @@ const AuthProvider = ({ children  })=>{
     const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_1__.useRouter)();
     const registerUser = async ({ name , email , password  })=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].post */ .Z.post(`${"http://localhost:3000"}/api/auth/register`, {
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].post */ .Z.post(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/auth/register`, {
                 name,
                 email,
                 password
@@ -422,7 +422,7 @@ const AuthProvider = ({ children  })=>{
     const updateProfile = async (formData)=>{
         try {
             setLoading(true);
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"http://localhost:3000"}/api/auth/me/update`, formData, {
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/auth/me/update`, formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"
                 }
@@ -438,7 +438,7 @@ const AuthProvider = ({ children  })=>{
     };
     const updatePassword = async ({ currentPassword , newPassword  })=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"http://localhost:3000"}/api/auth/me/update_password`, {
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/auth/me/update_password`, {
                 currentPassword,
                 newPassword
             });
@@ -452,7 +452,7 @@ const AuthProvider = ({ children  })=>{
     };
     const updateUser = async (id, userData)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"http://localhost:3000"}/api/admin/users/${id}`, {
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/admin/users/${id}`, {
                 userData
             });
             if (data?.success) {
@@ -465,7 +465,7 @@ const AuthProvider = ({ children  })=>{
     };
     const deleteUser = async (id)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"]["delete"] */ .Z["delete"](`${"http://localhost:3000"}/api/admin/users/${id}`);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"]["delete"] */ .Z["delete"](`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/admin/users/${id}`);
             if (data?.success) {
                 router.replace(`/admin/users`);
             }
@@ -475,7 +475,7 @@ const AuthProvider = ({ children  })=>{
     };
     const addNewAddress = async (address)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].post */ .Z.post(`${"http://localhost:3000"}/api/address`, address);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].post */ .Z.post(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/address`, address);
             if (data) {
                 router.push("/me");
             }
@@ -485,7 +485,7 @@ const AuthProvider = ({ children  })=>{
     };
     const updateAddress = async (id, address)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"http://localhost:3000"}/api/address/${id}`, address);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/address/${id}`, address);
             if (data?.address) {
                 setUpdated(true);
                 router.replace(`/address/${id}`);
@@ -496,7 +496,7 @@ const AuthProvider = ({ children  })=>{
     };
     const deleteAddress = async (id)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"]["delete"] */ .Z["delete"](`${"http://localhost:3000"}/api/address/${id}`);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"]["delete"] */ .Z["delete"](`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/address/${id}`);
             if (data?.success) {
                 router.push("/me");
             }
@@ -653,7 +653,7 @@ const OrderProvider = ({ children  })=>{
     const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_1__.useRouter)();
     const updateOrder = async (id, orderData)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"http://localhost:3000"}/api/admin/orders/${id}`, orderData);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/admin/orders/${id}`, orderData);
             if (data.success) {
                 setUpdated(true);
                 router.replace(`/admin/orders/${id}`);
@@ -664,7 +664,7 @@ const OrderProvider = ({ children  })=>{
     };
     const deleteOrder = async (id)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"]["delete"] */ .Z["delete"](`${"http://localhost:3000"}/api/admin/orders/${id}`);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"]["delete"] */ .Z["delete"](`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/admin/orders/${id}`);
             if (data?.success) {
                 router.replace(`/admin/orders`);
             }
@@ -674,7 +674,7 @@ const OrderProvider = ({ children  })=>{
     };
     const canUserReview = async (id)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].get */ .Z.get(`${"http://localhost:3000"}/api/orders/can_review?productId=${id}`);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].get */ .Z.get(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/orders/can_review?productId=${id}`);
             if (data?.canReview) {
                 setCanReview(data?.canReview);
             }
@@ -731,7 +731,7 @@ const ProductProvider = ({ children  })=>{
     const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_1__.useRouter)();
     const updateProduct = async (product, id)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"http://localhost:3000"}/api/admin/products/${id}`, product);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/admin/products/${id}`, product);
             if (data) {
                 setUpdated(true);
                 router.replace(`/admin/products/${id}`);
@@ -742,7 +742,7 @@ const ProductProvider = ({ children  })=>{
     };
     const newProduct = async (product)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].post */ .Z.post(`${"http://localhost:3000"}/api/admin/products`, product);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].post */ .Z.post(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/admin/products`, product);
             if (data) {
                 router.replace("/admin/products");
             }
@@ -753,7 +753,7 @@ const ProductProvider = ({ children  })=>{
     const uploadProductImages = async (formData, id)=>{
         try {
             setLoading(true);
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].post */ .Z.post(`${"http://localhost:3000"}/api/admin/products/upload_images/${id}`, formData, {
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].post */ .Z.post(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/admin/products/upload_images/${id}`, formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"
                 }
@@ -768,7 +768,7 @@ const ProductProvider = ({ children  })=>{
     };
     const deleteProduct = async (id)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"]["delete"] */ .Z["delete"](`${"http://localhost:3000"}/api/admin/products/${id}`);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"]["delete"] */ .Z["delete"](`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/admin/products/${id}`);
             if (data?.success) {
                 router.replace(`/admin/products`);
             }
@@ -778,7 +778,7 @@ const ProductProvider = ({ children  })=>{
     };
     const postReview = async (reviewData)=>{
         try {
-            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"http://localhost:3000"}/api/products/review`, reviewData);
+            const { data  } = await axios__WEBPACK_IMPORTED_MODULE_3__/* ["default"].put */ .Z.put(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/products/review`, reviewData);
             if (data?.success) {
                 router.replace(`/product/${reviewData?.productId}`);
             }

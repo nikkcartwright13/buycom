@@ -542,7 +542,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const getProductDetails = async (id)=>{
-    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_5___default().get(`${"http://localhost:3000"}/api/products/${id}`);
+    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_5___default().get(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/products/${id}`);
     return data?.product;
 };
 const ProductDetailsPage = async ({ params  })=>{
@@ -1042,7 +1042,7 @@ const getUserReview = (reviews, userId)=>{
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [3098,486,6497,5633,4374,6032], () => (__webpack_exec__(39787)));
+var __webpack_exports__ = __webpack_require__.X(0, [3098,486,6497,5633,4374,4687], () => (__webpack_exec__(39787)));
 module.exports = __webpack_exports__;
 
 })();

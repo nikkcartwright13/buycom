@@ -4,6 +4,7 @@
   "/admin/orders/[id]/page": "app/admin/orders/[id]/page.js",
   "/admin/orders/page": "app/admin/orders/page.js",
   "/admin/products/[id]/page": "app/admin/products/[id]/page.js",
+  "/admin/products/[id]/upload_images/page": "app/admin/products/[id]/upload_images/page.js",
   "/admin/products/new/page": "app/admin/products/new/page.js",
   "/admin/products/page": "app/admin/products/page.js",
   "/admin/users/[id]/page": "app/admin/users/[id]/page.js",
@@ -15,9 +16,8 @@
   "/me/page": "app/me/page.js",
   "/me/update/page": "app/me/update/page.js",
   "/me/update_password/page": "app/me/update_password/page.js",
+  "/page": "app/page.js",
   "/product/[id]/page": "app/product/[id]/page.js",
   "/register/page": "app/register/page.js",
-  "/shipping/page": "app/shipping/page.js",
-  "/admin/products/[id]/upload_images/page": "app/admin/products/[id]/upload_images/page.js",
-  "/page": "app/page.js"
+  "/shipping/page": "app/shipping/page.js"
 }

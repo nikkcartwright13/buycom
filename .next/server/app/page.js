@@ -524,7 +524,7 @@ const getProducts = async (searchParams)=>{
             "ratings[gte]": searchParams.ratings
         };
         const searchQuery = query_string__WEBPACK_IMPORTED_MODULE_3__/* ["default"].stringify */ .Z.stringify(urlParams);
-        const { data  } = await axios__WEBPACK_IMPORTED_MODULE_4___default().get(`${"http://localhost:3000"}/api/products?${searchQuery}`);
+        const { data  } = await axios__WEBPACK_IMPORTED_MODULE_4___default().get(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/products?${searchQuery}`);
         return data;
     } catch (error) {
         console.error("Error fetching products:", error);
@@ -1017,7 +1017,7 @@ const ListProducts = ({ data  })=>{
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [3098,486,6497,9700,3190,5633,6032,869], () => (__webpack_exec__(53393)));
+var __webpack_exports__ = __webpack_require__.X(0, [3098,486,6497,9700,3190,5633,4687,869], () => (__webpack_exec__(53393)));
 module.exports = __webpack_exports__;
 
 })();

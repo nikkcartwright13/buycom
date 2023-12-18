@@ -526,7 +526,7 @@ __webpack_require__.r(__webpack_exports__);
 const getAddresses = async ()=>{
     const nextCookies = (0,next_headers__WEBPACK_IMPORTED_MODULE_3__.cookies)();
     const nextAuthSessionToken = nextCookies.get("next-auth.session-token");
-    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_4___default().get(`${"http://localhost:3000"}/api/address`, {
+    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_4___default().get(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/address`, {
         headers: {
             Cookie: `next-auth.session-token=${nextAuthSessionToken?.value}`
         }
@@ -705,7 +705,7 @@ const Profile = ({ addresses  })=>{
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [3098,486,2049,6032,3382,5319], () => (__webpack_exec__(85094)));
+var __webpack_exports__ = __webpack_require__.X(0, [3098,486,2049,4687,3382,5319], () => (__webpack_exec__(85094)));
 module.exports = __webpack_exports__;
 
 })();

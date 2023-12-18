@@ -540,7 +540,7 @@ const gerOrders = async (searchParams)=>{
         page: searchParams.page || 1
     };
     const searchQuery = query_string__WEBPACK_IMPORTED_MODULE_4__/* ["default"].stringify */ .Z.stringify(urlParams);
-    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_5___default().get(`${"http://localhost:3000"}/api/orders/me?${searchQuery}`, {
+    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_5___default().get(`${"https://npmbuycom-c8fjodpc4-nikkcartwrights-projects.vercel.app"}/api/orders/me?${searchQuery}`, {
         headers: {
             Cookie: `next-auth.session-token=${nextAuthSessionToken?.value}`
         }
@@ -814,7 +814,7 @@ const ListOrders = ({ orders  })=>{
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [3098,486,2049,6497,9700,3190,6032,3382,869,5319], () => (__webpack_exec__(12987)));
+var __webpack_exports__ = __webpack_require__.X(0, [3098,486,2049,6497,9700,3190,4687,3382,869,5319], () => (__webpack_exec__(12987)));
 module.exports = __webpack_exports__;
 
 })();

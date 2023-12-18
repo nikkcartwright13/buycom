@@ -4,6 +4,7 @@
   "/admin/orders/[id]/page": "/admin/orders/[id]",
   "/admin/orders/page": "/admin/orders",
   "/admin/products/[id]/page": "/admin/products/[id]",
+  "/admin/products/[id]/upload_images/page": "/admin/products/[id]/upload_images",
   "/admin/products/new/page": "/admin/products/new",
   "/admin/products/page": "/admin/products",
   "/admin/users/[id]/page": "/admin/users/[id]",
@@ -15,9 +16,8 @@
   "/me/page": "/me",
   "/me/update/page": "/me/update",
   "/me/update_password/page": "/me/update_password",
+  "/page": "/",
   "/product/[id]/page": "/product/[id]",
   "/register/page": "/register",
-  "/shipping/page": "/shipping",
-  "/admin/products/[id]/upload_images/page": "/admin/products/[id]/upload_images",
-  "/page": "/"
+  "/shipping/page": "/shipping"
 }
