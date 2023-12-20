@@ -4,8 +4,8 @@ const nextConfig = {
     appDir: true,
   },
   env: {
-    //API_URL: "http://localhost:3000",
-   API_URL: "https://fantastic-speculoos-aee61e.netlify.app",
+   // API_URL: "http://localhost:3000",
+  // API_URL: "https://fantastic-speculoos-aee61e.netlify.app",
    // DB_LOCAL_URI: "mongodb://localhost:27017/buyitnow",
     NEXTAUTH_URL:"https://fantastic-speculoos-aee61e.netlify.app",
     DB_URI: "mongodb+srv://nikkcartwrighttt:nikkcartwright@nikkcartwright.gdblwyh.mongodb.net/test?retryWrites=true&w=majority",
